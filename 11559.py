@@ -54,8 +54,7 @@ def down():
         for j in range(num_row):
             graph[j][i] = new_col[j]
 
-# 더이상 터질게 없는 지 확인 
-# 터질게 있으면 좌표 반환
+# 더이상 터질게 없는 지 확인 (찾으면 .으로 바꿈)
 def done():
     is_done = True
     for i in range(num_row):

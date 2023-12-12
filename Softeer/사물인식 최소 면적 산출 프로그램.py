@@ -14,9 +14,9 @@ def calculate_square(points):
     points_y.sort()
 
     height = points_y[-1] - points_y[0]
-    if height > min_area: return 1000000
     width = points_x[-1] - points_x[0]
-    if width > min_area: return 1000000
+
+    #if (height > min_area and width != 0) or (width > min_area and height != 0): return 1000000
 
     return height * width
 
